@@ -1,19 +1,24 @@
 #version 330 core
+layout(location=0) in vec3 inPos;
+layout(location=1) in vec4 inCol;
+layout(location=2) in vec3 inN;
 
-layout(location = 0) in vec3 inPos;
-layout(location = 1) in vec4 inCol;
-layout(location = 2) in vec2 inTex;
+out vec3 vWorldPos;
+out vec3 vN;
+out vec3 vBase;
 
-uniform mat4 uM; //Matrica transformacije
-uniform mat4 uV; //Matrica kamere
-uniform mat4 uP; //Matrica projekcija
+uniform mat4 uM;
+uniform mat4 uV;
+uniform mat4 uP;
 
-out vec4 channelCol;
-out vec2 channelTex;
+void main() {
+    vec4 world = uM * vec4(inPos, 1.0);
+    vWorldPos = world.xyz;
 
-void main()
-{
-	gl_Position = uP * uV * uM * vec4(inPos, 1.0); //Zbog nekomutativnosti mnozenja matrica, moramo mnoziti MVP matrice i tjemena "unazad"
-	channelCol = inCol;
-	channelTex = inTex;
+    mat3 normalMat = mat3(transpose(inverse(uM)));
+    vN = normalize(normalMat * inN);
+
+    vBase = inCol.rgb;
+
+    gl_Position = uP * uV * world;
 }

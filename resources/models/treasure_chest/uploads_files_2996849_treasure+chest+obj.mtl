@@ -1,0 +1,44 @@
+# Blender MTL File: 'None'
+# Material Count: 3
+
+newmtl Material.001
+Ns 225.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Bump text\\low chest_DefaultMaterial_Normal.png
+map_Kd text\\low chest_DefaultMaterial_BaseColor.png
+map_Ns text\\low chest_DefaultMaterial_Roughness.png
+refl text\\low chest_DefaultMaterial_Metallic.png
+
+newmtl Material.002
+Ns 225.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Bump altinlar_DefaultMaterial_Normal.png
+map_Kd altinlar_DefaultMaterial_BaseColor.png
+map_Ns altinlar_DefaultMaterial_Roughness.png
+refl altinlar_DefaultMaterial_Metallic.png
+
+newmtl chest
+Ns 29.241091
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 1.000000 1.000000 1.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 3
+map_Bump -o 0.000000 -1.000000 0.000000 text\\low chest_DefaultMaterial_Normal.png
+map_Kd text\\low chest_DefaultMaterial_BaseColor.png
+map_Ns text\\low chest_DefaultMaterial_Roughness.png
+refl text\\low chest_DefaultMaterial_Metallic.png

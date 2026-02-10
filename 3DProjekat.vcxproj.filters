@@ -21,6 +21,24 @@
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Util.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="aquariumFrame.h">
+      <Filter>Header Files</Filter>
+    </ClCompile>
+    <ClCompile Include="shader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="stb_image.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="aquariumFrame.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="treasureChest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
@@ -30,5 +48,63 @@
     <None Include="basic.vert">
       <Filter>Source Files\Shader Files</Filter>
     </None>
+    <None Include="textured.vert">
+      <Filter>Source Files\Shader Files</Filter>
+    </None>
+    <None Include="textured.frag">
+      <Filter>Source Files\Shader Files</Filter>
+    </None>
+    <None Include="light.frag">
+      <Filter>Source Files\Shader Files</Filter>
+    </None>
+    <None Include="model.frag">
+      <Filter>Source Files\Shader Files</Filter>
+    </None>
+    <None Include="model.vert">
+      <Filter>Source Files\Shader Files</Filter>
+    </None>
+    <None Include="particle.vert">
+      <Filter>Source Files\Shader Files</Filter>
+    </None>
+    <None Include="particle.frag">
+      <Filter>Source Files\Shader Files</Filter>
+    </None>
+    <None Include="transparent.frag">
+      <Filter>Source Files\Shader Files</Filter>
+    </None>
+    <None Include="transparent.vert">
+      <Filter>Source Files\Shader Files</Filter>
+    </None>
+    <None Include="entity.frag">
+      <Filter>Source Files\Shader Files</Filter>
+    </None>
+    <None Include="entity.vert">
+      <Filter>Source Files\Shader Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stb_image.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Util.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="shader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="modelMesh.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="model.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="treasureChest.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="resources\sand.png">
+      <Filter>Resource Files</Filter>
+    </Image>
   </ItemGroup>
 </Project>
